@@ -2,21 +2,29 @@ algoritmo "contadorinteligente"
 var
    i, f, c: Inteiro
 inicio
-   i <- 0
 
-   Escreval ("  CONTAGEM INTELIGENTE  ")
-   Escreval ("------------------------")
+   EscrevaL ("-------------------------")
+   EscrevaL ("  CONTAGEM INTELIGENTE  ")
+   EscrevaL ("-------------------------")
 
    Escreva ("INÍCIO: ")
    Leia (i)
    Escreva ("FIM: ")
    Leia (f)
-
-   Enquanto (c < f) faca
-      Se (i < f) entao
+   EscrevaL ("-------------------------")
+   EscrevaL ("    C O N T A N D O    ")
+   EscrevaL ("-------------------------")
+   Escreva (i)
+   Se (i < f) entao
+      Enquanto (i < f) faca
          i <- i + 1
-         Escreva (c)
-      Fimse
-   FimEnquanto
+         Escreva (i)
+      FimEnquanto
+   senao
+      Enquanto (i > f) faca
+         i <- i -1
+         escreva (i)
+      Fimenquanto
+   fimSe
 
 fimalgoritmo
